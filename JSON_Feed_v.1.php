@@ -1,8 +1,4 @@
-<html>
- <head>
-  <title>PHP Test</title>
- </head>
- <body>
+
  <?php
  
  /**
@@ -24,8 +20,16 @@ $module->title = "test title";
 
  //$data = array(4 => "four", 8 => "eight");
  
-echo json_encode($module);
+//echo json_encode($module);
+
+
+//lets analyse POST request received
+//$ourPostReuqest = $_POST['testValue'];
+var_dump($_POST);
+//echo $ourPostReuqest;
+echo json_decode($ourPostReuqest);
+//echo "<br/><br/> our obj: " + $obj;
+
+
  
   ?> 
- </body>
-</html>
